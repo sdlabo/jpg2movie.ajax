@@ -1,0 +1,25 @@
+* {
+//  width: 1000px;
+  width: 100%;
+  background-color: gray;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+body {
+//  width: 1000px;
+  width: 100%;
+  background-color: gray;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+}
+
+img#jpg{
+    width: 1024px;
+    height: 768px;
+    background-color: black;
+    margin: 0 auto;
+//    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}

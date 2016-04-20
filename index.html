@@ -1,0 +1,32 @@
+<html>
+<head>
+    <link href="./null.css" media="all" rel="stylesheet" type="text/css">
+    <script src="./jquery-1.12.3.min.js"></script>
+</head>
+<body>
+<script>
+function call_ajax()
+{
+    $.ajax({
+        type: 'GET',
+        url: 'get_newest.php'
+    }).done(function(data){
+        console.log('done');
+        console.log(data);
+        $('#jpg').attr('src', data);
+    }).fail(function(){
+        console.log('fail');
+        setTimeout(call_ajax, 333);
+    }).always(function(){
+        console.log('ajax finish');
+        setTimeout(call_ajax, 333);
+    });
+
+}
+$(window).load(function(){
+  call_ajax();
+})
+</script>
+<img id="jpg" width="1024" height="768" src="blank.jpg">
+</body>
+</html>
